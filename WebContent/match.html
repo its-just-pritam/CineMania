@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CineMania</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Varela+Round&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="bot-header">
+
+		<h1>CineMania</h1>
+		<h2>CHALLENGE MATCH</h2>
+		<span id="tm-chances">CHANCES LEFT : </span>
+		<span id="tm-time">TIME LEFT : </span>
+		
+	</header>
+	
+	<div class="match-container">
+
+		<form id="challenge-throw">
+
+			<div class="movieName">
+
+				<p>CHALLENGE</p>
+
+				<input type="text" name="moviename" id="tm-moviename" placeholder="Type the name a movie here (ALL IN CAPS)">
+				
+			</div>
+
+			<div class="tm-button">
+
+				<input type="submit" name="submit" value="FREEZE" class="profile-btn" id="freeze-movie">
+
+			</div>
+
+		</form>
+
+		<div class="tm-button">
+			<button type="button" value="SEND" class="btn btn1" id="challenge-button">
+				SEND
+			</button>
+		</div>
+
+
+		<hr color="#FFFF75">
+
+		
+		<div class="underScore">Movie Name</div>
+		<div class="rightGuess">Right Guess</div>
+		<div class="wrongGuess">Wrong Guess</div>
+		
+		<div id="movie-data"></div>
+
+		<div class="tm-button">
+
+			<a href="http://localhost:8084/Cine_Mania/game_mode.jsp">
+				<button type="button" value="QUIT GAME" class="btn btn1" id="close-button">
+					QUIT GAME
+				</button>
+			</a>
+
+		</div>
+		
+
+	</div>
+
+
+	<footer class="tm-footer">
+		<div align="center">
+			<audio controls autoplay loop>
+			  <source src="midnight_aura.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+		&copy; Copyright Pritam Mallick 2020
+	</footer>
+
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/test.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="js/client.js"></script>
+	
+</body>
+</html>
